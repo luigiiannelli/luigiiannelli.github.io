@@ -1,7 +1,7 @@
 <html>
-	<head>
-		<title>Illustrations</title>
-		<style>
+  <head>
+    <title>Illustrations</title>
+    <style>
       .center {
         display: block;
         margin-left: auto;
@@ -140,46 +140,100 @@
         cursor: pointer;
       }
     </style>
-		<body>
-			<img class="center" id="faccia" src="immagini/facciaillustrations.png" width="260px"/>
-			<img class="center" id="testata" src="immagini/illustrations.png" width="732px"/>
-			<img class="center" id="galleria" src="immagini/gallerycomp.png" usemap="#galleria"/>
-			<map name="galleria">
-				<area id="myImg" title="ivy" href="javascript:mostraImmagine('ivy.jpg', 'IVY VS ROBIN')" coords="39,41,446,629" shape="rect"/>
-				<area id="myImg" title="johnny" href="javascript:mostraImmagine('johnny.jpg', 'LOUDER THAN WORDS')" coords="459,2,776,318" shape="rect"/>
-				<area id="myImg" title="geppi" href="javascript:mostraImmagine('geppi.jpg', 'REGALO PER GEPPI')" coords="894,960,458,351" shape="rect"/>
-				<area id="myImg" title="abba" href="javascript:mostraImmagine('abba.jpg', 'ABBA - VOYAGE')" coords="2,644,444,1088" shape="rect"/>
-				<area id="myImg" title="bubblegirl" href="javascript:mostraImmagine('bubblegirl.jpg', 'BUBBLE GIRL')" coords="462,978,835,1351" shape="rect"/>
-				<area id="myImg" title="avantischiavi" href="javascript:mostraImmagine('avantischiavi.jpg', 'AVANTI SCHIAVI - COPERTINA')" coords="31,1108,448,1758" shape="rect"/>
-				<area id="myImg" title="mostri" href="javascript:mostraImmagine('mostri.jpg', 'GEENO PER ALTRAMAREA 2022')" coords="461,1362,764,1666" shape="rect"/>
-			</map>
-			<div id="myModal" class="modal">
-				<span class="close">&times;</span>
-				<img class="modal-content" id="img01"/>
-				<div id="caption"/>
-			</div>
-			<script src=“https://raw.github.com/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js”></script>
-			<script type="text/javascript" src="mostraImmagine.js"/>
-			<div class="footermenu">
-				<div class="item1">
-					<a href="../comics/comics.html">
-						<img src="immagini/comics.png" width="221px"/>
-					</div>
-				</a>
-				<div class="item2">
-					<a href="../concepts/concepts.html">
-						<img src="immagini/concepts.png" width="213px"/>
-					</a>
-				</div>
-				<div class="item3">
-					<a href="../graphics/graphics.html">
-						<img src="immagini/graphics.png" width="214px"/>
-					</a>
-				</div>
-			</div>
-			<a href="../index.html">
-				<img class="center" id="home" src="immagini/home.png"/>
-			</a>
-		</body>
-	</head>
+
+    <body>
+      <img
+        class="center"
+        id="faccia"
+        src="immagini/facciaillustrations.png"
+        width="260px"
+      />
+      <img
+        class="center"
+        id="testata"
+        src="immagini/illustrations.png"
+        width="732px"
+      />
+
+      <img
+        class="center"
+        id="galleria"
+        src="immagini/gallerycomp.png"
+        usemap="#galleria"
+      />
+
+      <map name="galleria">
+        <area
+          id="myImg"
+          title="ivy"
+          href="javascript:mostraImmagine('ivy.jpg', 'IVY VS ROBIN')"
+          coords="39,41,446,629"
+          shape="rect"
+        />
+        <area
+          id="myImg"
+          title="johnny"
+          href="javascript:mostraImmagine('johnny.jpg', 'LOUDER THAN WORDS')"
+          coords="459,2,776,318"
+          shape="rect"
+        />
+        <area
+          id="myImg"
+          title="geppi"
+          href="javascript:mostraImmagine('geppi.jpg', 'REGALO PER GEPPI')"
+          coords="894,960,458,351"
+          shape="rect"
+        />
+        <area
+          id="myImg"
+          title="abba"
+          href="javascript:mostraImmagine('abba.jpg', 'ABBA - VOYAGE')"
+          coords="2,644,444,1088"
+          shape="rect"
+        />
+        <area
+          id="myImg"
+          title="bubblegirl"
+          href="javascript:mostraImmagine('bubblegirl.jpg', 'BUBBLE GIRL')"
+          coords="462,978,835,1351"
+          shape="rect"
+        />
+        <area
+          id="myImg"
+          title="avantischiavi"
+          href="javascript:mostraImmagine('avantischiavi.jpg', 'AVANTI SCHIAVI - COPERTINA')"
+          coords="31,1108,448,1758"
+          shape="rect"
+        />
+        <area
+          id="myImg"
+          title="mostri"
+          href="javascript:mostraImmagine('mostri.jpg', 'GEENO PER ALTRAMAREA 2022')"
+          coords="461,1362,764,1666"
+          shape="rect"
+        />
+      </map>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+     
+     <script src=“https://raw.github.com/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js”></script>
+     <script type="text/javascript" src="mostraImmagine.js"></script>
+
+      <div class="footermenu">
+        <div class="item1"><a href="../comics/comics.html"><img src="immagini/comics.png" width="221px" /></div></a>
+        <div class="item2">
+          <a href="../concepts/concepts.html"><img src="immagini/concepts.png" width="213px" /></a>
+        </div>
+        <div class="item3">
+          <a href="../graphics/graphics.html"><img src="immagini/graphics.png" width="214px" /></a>
+        </div>
+      </div>
+
+      <a href="../home/home.html"><img class="center" id="home" src="immagini/home.png" /></a>
+    </body>
+  </head>
 </html>
