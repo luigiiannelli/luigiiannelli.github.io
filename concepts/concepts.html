@@ -1,0 +1,220 @@
+<html>
+  <head>
+    <title>Concepts</title>
+    <style>
+	
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #faccia {
+        margin-top: 50px;
+     
+      }
+	  
+      #testata2 {
+	    
+        width: 45%;
+        margin-top: 62px;
+		
+      }
+	  
+	
+	  
+
+	 #griglia1 {
+	  
+	  width: 75%;
+	  margin-top: 120px;
+	  margin-left: auto;
+      margin-right: auto;
+	  border:4px solid #00ceff;
+	  }
+	  
+      #griglia {
+	  
+	  width: 75%;
+	  margin-top: 50px;
+	  margin-left: auto;
+      margin-right: auto;
+	  border:4px solid #00ceff;
+	  }
+	  
+	  
+	  .footermenu2 {
+	  margin-top: 95px;
+	  margin-right: auto;
+	  margin-left: auto;
+      display: grid;
+	  gap: 1px 1px;
+	  justify-content: space-evenly;
+	  }
+	  
+	  .item1{
+	  
+	  grid-column-start: 1;
+      grid-column-end: 2;
+	  
+	  
+     }
+  
+     .item2{
+	  
+	  grid-column-start: 2;
+      grid-column-end: 3;
+      text-align: center;
+     }
+	 
+	 
+	 .item3{
+	  
+	  grid-column-start: 3;
+      grid-column-end: 4;
+	  
+     }
+	  
+	  .footermenu2 img {
+	 
+	 margin-right: auto;
+	 margin-left: auto;
+     text-align: center;
+	 
+	 }
+	 
+	 #home {
+	  margin-top: 60px;
+	  margin-bottom: 70px;
+	  text-align: center;
+	  }
+	  
+	    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {
+        opacity: 0.7;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      #caption {
+	    font-family: Futura, sans-serif;
+		font-size: 20px;
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        color: #ccc;
+        padding: 20px 0;
+        height: 150px;
+      }
+
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+	  
+	  
+    </style>
+
+    <body>
+      <img
+        class="center"
+        id="faccia"
+        src="immagini/facciaconcepts.png"
+        width="270px"
+      />
+	  
+	  
+      
+	  
+	  <img class="center" id="testata2" src="immagini/concepts.png" width="732px"/>
+	  
+	  <a href="javascript:mostraImmagine('baker.jpg', 'INTO THE WOODS - BAKER TURNAROUND/EXPRESSION SHEET')"><img class="center" id="griglia1" src="immagini/bakerthumb.jpg"></a>
+	  
+	  <a href="javascript:mostraImmagine('bakershop.jpg', 'INTO THE WOODS - BAKER AND WIFE COTTAGE/SHOP')"><img class="center" id="griglia" src="immagini/bakershopthumb.jpg"></a>
+	  
+	  <a href="javascript:mostraImmagine('witch.jpg', 'INTO THE WOODS - WITCH SCENES CONCEPT')"><img class="center" id="griglia" src="immagini/witchthumb.jpg"></a>
+	  
+	  <a href="javascript:mostraImmagine('grannycottage.jpg', 'INTO THE WOODS - LITTLE RED RIDING HOOD GRANNY\'S COTTAGE')"><img class="center" id="griglia" src="immagini/grannycottagethumb.jpg"></a>
+	 
+	  <a href="javascript:mostraImmagine('littlered.jpg', 'INTO THE WOODS - LITTLE RED RIDING HOOD SCENES CONCEPT')"><img class="center" id="griglia" src="immagini/littleredthumb.jpg"></a>
+	  
+	  <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+	  
+	  <script src=“https://raw.github.com/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js”></script>
+      <script type="text/javascript" src="mostraImmagine.js"></script>
+	  
+	  
+	  <div class="footermenu2">
+	  <div class="item1"><a href="../comics/comics.html"><img src="immagini/comics.png" width="185px" height="50px"></a></div>
+      <div class="item2"><a href="../illustrations/illustrations.html"><img src="immagini/illustrations.png" width="185px" height="50px"></a></div>
+      <div class="item3"><a href="../graphics/graphics.html"><img src="immagini/graphics.png" width="185px" height="50px"></a></div>
+	  </div>
+	  
+      <a href="../index.html"><img
+        class="center"
+		id="home"
+        src="immagini/home.png"
+      /></a>
+	  
+	</body>
+  </head>
+</html>

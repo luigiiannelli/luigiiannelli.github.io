@@ -1,0 +1,208 @@
+<html>
+  <head>
+    <title>Comics</title>
+    <style>
+	
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #faccia {
+        margin-top: 50px;
+        
+      }
+      #testata {
+        width: 40%;
+        margin-top: 25px;
+      }
+
+      body {
+        background-image: url("immagini/riquadrosfondo.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 2250px;
+      }
+
+      #galleria {
+	  margin-top: 70px;
+	  width: 75%;
+	  }
+	  
+	  	  .footermenu {
+		  margin-top: 60px;
+		  margin-right: auto;
+		  margin-left: auto;
+          display: grid;
+	      gap: 1px 1px;
+		  justify-content: space-evenly;
+		  max-width: 830px;
+	     }
+	  
+	  .item1{
+	  
+	  grid-column-start: 1;
+      grid-column-end: 2;
+	  
+	  
+     }
+  
+     .item2{
+	  
+	  grid-column-start: 2;
+      grid-column-end: 3;
+      text-align: center;
+     }
+	 
+	 
+	 .item3{
+	  
+	  grid-column-start: 3;
+      grid-column-end: 4;
+	  
+     }
+	  
+	  .footermenu img {
+	 margin-right: auto;
+	 margin-left: auto;
+	 text-align: center;
+	 
+	 }
+	 
+	 #home {
+	  margin-top: 60px;
+	  margin-bottom: 70px;
+	  width: 30%;
+	  }
+	  
+	  #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {
+        opacity: 0.7;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      #caption {
+	    font-family: Futura, sans-serif;
+		font-size: 20px;
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        color: #ccc;
+        padding: 20px 0;
+        height: 150px;
+      }
+
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+	  
+	  
+    </style>
+
+    <body>
+      <img
+        class="center"
+        id="faccia"
+        src="immagini/facciacomics.png"
+        width="241px"
+      />
+	  
+      <img
+        class="center"
+        id="testata"
+        src="immagini/comics.svg"
+        width="732px"
+      />
+	  
+      <br/>
+	  <br/>
+	  <br/>
+      
+	  <a href="javascript:mostraImmagine('tavola4.jpg', 'OLTRE LA SOGLIA - TAVOLA 4')"><img class="center"  src="immagini/vignetta1.png"></a>
+	  
+	  <a href="javascript:mostraImmagine('tavola5.jpg', 'OLTRE LA SOGLIA - TAVOLA 5')"><img class="center"  src="immagini/vignetta2.png"></a>
+	  
+	  <a href="javascript:mostraImmagine('tavola6.jpg', 'OLTRE LA SOGLIA - TAVOLA 6')"><img class="center"  src="immagini/vignetta3.png"></a>
+	  
+	  <a href="javascript:mostraImmagine('tavola7.jpg', 'OLTRE LA SOGLIA - TAVOLA 7')"><img class="center"  src="immagini/vignetta4.png"></a>
+	 
+	  <a href="javascript:mostraImmagine('tavola8.jpg', 'OLTRE LA SOGLIA - TAVOLA 8')"><img class="center"  src="immagini/vignetta5.png"></a>
+	  
+	  <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+	  
+	  
+      <script type="text/javascript" src="mostraImmagine.js"></script>
+	  
+      <div class="footermenu">
+	  <div class="item1"><a href="../illustrations/illustrations.html"><img src="immagini/illustrations.svg" width="178px" height="50px"></a></div>
+      <div class="item2"><a href="../concepts/concepts.html"><img src="immagini/concepts.svg" width="170px" height="50px"></a></div>
+      <div class="item3"><a href="../graphics/graphics.html"><img src="immagini/graphics.svg" width="170px" height="50px"></a></div>
+	  </div>
+	  
+      <a href="../index.html"><img class="center" id="home" src="immagini/home.svg"/></a>
+	  
+	</body>
+  </head>
+</html>

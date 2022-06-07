@@ -1,0 +1,185 @@
+<html>
+	<head>
+		<title>Illustrations</title>
+		<style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #faccia {
+        margin-top: 50px;
+        
+      }
+      #testata {
+        
+        margin-top: 25px;
+      }
+
+      body {
+        background-image: url("immagini/riquadrosfondo.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 94%;
+		
+		
+      }
+
+      #galleria {
+        margin-top: 70px;
+        width: 844px;
+		height: 1759px;
+      }
+
+      .footermenu {
+        margin-top: 120px;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        gap: 5px 5px;
+        justify-content: space-evenly;
+		max-width: 900px;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 20px;
+      }
+
+      .item3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+      #home {
+        margin-top: 50px;
+        }
+
+      #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {
+        opacity: 0.7;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      #caption {
+	    font-family: Futura, sans-serif;
+		font-size: 20px;
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        color: #ccc;
+        padding: 20px 0;
+        height: 150px;
+      }
+
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+		<body>
+			<img class="center" id="faccia" src="immagini/facciaillustrations.png" width="260px"/>
+			<img class="center" id="testata" src="immagini/illustrations.png" width="732px"/>
+			<img class="center" id="galleria" src="immagini/gallerycomp.png" usemap="#galleria"/>
+			<map name="galleria">
+				<area id="myImg" title="ivy" href="javascript:mostraImmagine('ivy.jpg', 'IVY VS ROBIN')" coords="39,41,446,629" shape="rect"/>
+				<area id="myImg" title="johnny" href="javascript:mostraImmagine('johnny.jpg', 'LOUDER THAN WORDS')" coords="459,2,776,318" shape="rect"/>
+				<area id="myImg" title="geppi" href="javascript:mostraImmagine('geppi.jpg', 'REGALO PER GEPPI')" coords="894,960,458,351" shape="rect"/>
+				<area id="myImg" title="abba" href="javascript:mostraImmagine('abba.jpg', 'ABBA - VOYAGE')" coords="2,644,444,1088" shape="rect"/>
+				<area id="myImg" title="bubblegirl" href="javascript:mostraImmagine('bubblegirl.jpg', 'BUBBLE GIRL')" coords="462,978,835,1351" shape="rect"/>
+				<area id="myImg" title="avantischiavi" href="javascript:mostraImmagine('avantischiavi.jpg', 'AVANTI SCHIAVI - COPERTINA')" coords="31,1108,448,1758" shape="rect"/>
+				<area id="myImg" title="mostri" href="javascript:mostraImmagine('mostri.jpg', 'GEENO PER ALTRAMAREA 2022')" coords="461,1362,764,1666" shape="rect"/>
+			</map>
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01"/>
+				<div id="caption"/>
+			</div>
+			<script src=“https://raw.github.com/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js”></script>
+			<script type="text/javascript" src="mostraImmagine.js"/>
+			<div class="footermenu">
+				<div class="item1">
+					<a href="../comics/comics.html">
+						<img src="immagini/comics.png" width="221px"/>
+					</div>
+				</a>
+				<div class="item2">
+					<a href="../concepts/concepts.html">
+						<img src="immagini/concepts.png" width="213px"/>
+					</a>
+				</div>
+				<div class="item3">
+					<a href="../graphics/graphics.html">
+						<img src="immagini/graphics.png" width="214px"/>
+					</a>
+				</div>
+			</div>
+			<a href="../index.html">
+				<img class="center" id="home" src="immagini/home.png"/>
+			</a>
+		</body>
+	</head>
+</html>

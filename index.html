@@ -1,127 +1,144 @@
-
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="author" content="MarkdownViewer++" />
-        <title>css exercise 7.txt</title>
-        <style type="text/css">
-            
-/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
-td, h1, h2, h3, h4, h5, p, ul, ol, li {
-    page-break-inside: avoid; 
-}
-
-        </style>
-      </head>
-    <body>
-        <html>
 <head>
-  <title>Home</title>
-  <style>
-    nav {
-      position: fixed;
-      width: 100%;
-      height: 50px;
-      background-color: navy;
-    }
-<pre><code>#navlist {
-  margin-left: 20px;
-  font-family: Arial black;
-}
-
-#navlist li a {
-  color: white;
-}
-
-#navlist li {
-  color: white;
-  padding: 20px;
-  display: inline;
-}
-
-#sectionlist {
-  margin-top: 40px;
-  margin-left: 20px;
-  padding: 20px
-}
-
-section {
-  float: left;
-  width: 20%;
-  height: 500px;
-  background-color: grey;
-  color: white;
-  font-family: Arial narrow;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-aside {
-  float: left;
-  width: 80%;
-  height: 500px;
-  background-color: white;
-  font-family: Arial narrow;
-  font-weight: normal;
-  color: black;
-}
-
-p {
-  margin-top: 40px;
-  padding: 20px
-}
-
-footer {
-  height: 30px;
-  clear: both;
-  background-color: lightgrey;
-  font-family: Arial narrow;
-  font-weight: normal;
-  color: black;
-}
-
-div {
-  padding: 5px;
-}
-
-body {
-  background-color: black;
-  margin: 0px;
-}
-</code></pre>
-  </style>
-</head>
+<title>Home</title>
 <body>
-  <nav>
-    <ul id="navlist">
-      <li> <a href="https://codepen.io/ginovanta/full/abLaLQK">Comics</a> </li>
-      <li><a href="https://codepen.io/ginovanta/full/oNGPGrV">Concepts</a></li>
-      <li><a href="https://codepen.io/ginovanta/full/jOGvaWL">Graphics</a></li>
-    </ul>
-  </nav>
-  <section>
-    <ul id="sectionlist">
-      <li>Bio</li>
-      <li>Studies</li>
-      <li>Works</li>
-      <li>Ispirations</li>
-      <li>Shop</li>
-    </ul>
-  </section>
-  <aside>
-    <p>Hi, i'm Luigi, an art student from italy and (as of now) amateur graphic artist
-      Love photo manipulation and compositing, as well as comic books and concept arts.
-    </P>
-  </aside>
-  <footer>
-    <div>
-      Contact me: ginonovanta@gmail.com
-    </div>
-  </footer>
-</body>
-</html>
+<style>
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+		
+		}
+	  
+	  
+#faccegeeno{
 
-    </body>
+    position:absolute;
+    top: 0;
+	left: 50%;
+	margin-left: -450px;
+    z-index: 0;
+	}
+	
+
+#geenologo{
+    position:relative;
+    top:444px; 
+	left: -9px;
+    z-index: 1;
+	animation-name: geenospin;
+    animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+  }
+
+
+
+      .footermenu {
+        margin-top: 780px;
+        margin-right: auto;
+        margin-left: auto;
+        display: grid;
+        gap: 5px 5px;
+        justify-content: space-evenly;
+		max-width: 500px;
+      }
+
+      .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+       
+      }
+	  
+	  .loghisocial{
+	    margin-top: 40px;
+	    margin-right: auto;
+        margin-left: auto;
+		margin-bottom: 50px;
+        display: grid;
+		gap: 5px 5px;
+        justify-content: space-evenly;
+		max-width: 500px;
+		}
+		
+		.item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+       
+      }
+	  
+	  .item3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+       
+      }
+	  
+	  :root{
+		--inizio-animazione:0deg;
+		--fine-animazione:360deg;
+		}
+		
+	  
+   @keyframes geenospin {
+    from {
+        transform: rotate(var(--inizio-animazione));
+    } to {
+        transform: rotate(var(--fine-animazione));
+    }
+   } 
+	  
+	  
+</style>
+
+<img  class="center" id="faccegeeno" src="immagini/faccegeeno.jpeg"/ width="900px">
+
+
+<img  onclick="ruotalogo()" class="center" id="geenologo" src="immagini/geenologo.png"/>
+
+<script type="text/javascript" src="ruotalogo.js"></script>
+
+<div class="footermenu">
+        <div class="item1">
+		 <a href="aboutme/aboutme.html"><img src="immagini/aboutme.png" width="178px" /></a>
+		</div>
+        <div class="item2">
+          <a href="mailto:ginonovanta@gmail.com"><img src="immagini/contattami.png" width="203px"/></a>
+        </div>
+       </div>
+</br>
+</br>
+</br>
+
+<img class="center" src="immagini/cercamisu.png" width="208px" />
+
+</br>
+
+
+
+ <div class="loghisocial">
+        <div class="item1">
+		<a href="https://www.facebook.com/geenoart"><img src="immagini/facebooklogo.png" width="80px" /></a>
+		</div>
+        <div class="item2">
+          <a href="https://www.instagram.com/geeno_art/"><img src="immagini/instagramlogo.png" width="80px" /></a>
+        </div>
+        <div class="item3">
+          <a href="https://www.behance.net/luigiiannelli1"><img src="immagini/behancelogo.png" width="80px" /></a>
+        </div>
+      </div>
+
+
+</body>
+</head>
 </html>
-            

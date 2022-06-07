@@ -1,0 +1,239 @@
+<html>
+  <head>
+    <title>Graphics</title>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #faccia {
+        margin-top: 50px;
+       
+      }
+      #testata {
+        
+        margin-top: 50px;
+      }
+
+      body {
+        background-color: #332f91;
+        }
+	   
+
+      .galleria {
+	    margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        align-items: self-end;
+      }
+
+      .columnsx {
+	    margin-right: 32px;
+        justify-self: end;
+      }
+
+      .columndx {
+	    justify-self: start;
+      }
+
+      .columnsx img {
+        margin: 10px;
+        width: 100%;
+      }
+	  
+	  .columndx img {
+        margin: 10px;
+        width: 100%;
+		}
+		
+		  .footermenu {
+		  margin-top: 80px;
+		  margin-right: auto;
+		  margin-left: auto;
+          display: grid;
+	      gap: 5px 5px;
+		  justify-content: space-evenly;
+		  max-width: 964px;
+	     }
+	  
+	  .item1{
+	  
+	  grid-column-start: 1;
+      grid-column-end: 2;
+	  text-align: right;
+     }
+  
+     .item2{
+	  
+	  grid-column-start: 2;
+      grid-column-end: 3;
+	  text-align: right;
+     }
+	 
+	 .item3{
+	  
+	  grid-column-start: 3;
+      grid-column-end: 4;
+	  
+     }
+	 
+	 .footermenu img {
+	 margin-right: auto;
+	 margin-left: auto;
+	 width: 85%;
+	 text-align: center;
+	 }
+	 
+	  
+	  #home {
+	  margin-top: 100px;
+	  margin-bottom: 70px;
+	  width: 15%;
+	  }
+	  
+	  	  #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #myImg:hover {
+        opacity: 0.7;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      #caption {
+	    font-family: Futura, sans-serif;
+		font-size: 20px;
+        margin: auto;
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        color: #ccc;
+        padding: 20px 0;
+        height: 150px;
+      }
+
+      .modal-content,
+      #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+	  
+	  
+    </style>
+
+    <body>
+      <img
+        class="center"
+        id="faccia"
+        src="immagini/facciagraphics.png"
+		width="260px"
+        
+      />
+      <img
+        class="center"
+        id="testata"
+        src="immagini/graphics.svg"
+		width="732px"
+		
+        
+      />
+
+      <div class="galleria">
+        <div class="columnsx">
+          <a href="javascript:mostraImmagine('twoface.jpg', 'BATMAN \'89 - TWO FACE')"><img src="immagini/twofacethumb.jpg" /></a>
+          <br />
+          <a href="javascript:mostraImmagine('ritaandthegang.jpg', 'RITA AND THE GANG - POSTER')"><img src="immagini/ritaandthegangthumb.jpg" /></a>
+          <br />
+          <a href="javascript:mostraImmagine('realtime.jpg', 'DOCTOR WHO: REAL TIME - CD CUSTOM COVER')"><img src="immagini/realtimethumb.jpg" /></a>
+        </div>
+        <div class="columndx">
+          <a href="javascript:mostraImmagine('8lucie.jpg', 'DOCTOR WHO: 8 DOCTOR AND LUCIE MILLER')"><img src="immagini/8luciethumb.jpg" /></a>
+          <br />
+          <a href="javascript:mostraImmagine('redranger.jpg', 'MIGHTY MORPHIN RED RANGER - POSTER')"><img src="immagini/redrangerthumb.jpg" /></a>
+          <br />
+          <a href="javascript:mostraImmagine('shalka.jpg', 'DOCTOR WHO: SCREAM OF THE SHALKA - CD CUSTOM COVER')"><img src="immagini/shalkathumb.jpg" /></a>
+         </div>
+      </div>
+	  
+	  
+	   <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+	  
+	  <script type="text/javascript" src="mostraImmagine.js"></script>
+	  
+	  
+	  <div class="footermenu">
+	  <div class="item1"><a href="../comics/comics.html"><img src="immagini/comics.svg" height="29px"></a></div>
+      <div class="item2"><a href="../illustrations/illustrations.html"><img src="immagini/illustrations.svg" height="29px"></a></div>
+      <div class="item3"><a href="../concepts/concepts.html"><img src="immagini/concepts.svg" height="29px"></a></div>
+	  </div>
+	  
+	 
+	  
+      <a href="../index.html"><img
+        class="center"
+		id="home"
+        src="immagini/home.svg"
+      /></a>
+	  
+	  
+    </body>
+  </head>
+</html>
